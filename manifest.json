@@ -1,0 +1,29 @@
+{
+    "name": "Ananda National College",
+    "short_name": "ANC",
+    "description": "Premier educational institution in Chilaw, Sri Lanka",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#200769",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/anclogo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "images/anclogo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["education", "school"],
+    "lang": "en",
+    "dir": "ltr",
+    "scope": "/",
+    "prefer_related_applications": false
+}

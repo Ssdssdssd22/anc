@@ -1,0 +1,46 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://anc.lk/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /site/admin/
+Disallow: /includes/
+Disallow: /process/
+Disallow: /mail/
+
+# Allow important pages
+Allow: /index.php
+Allow: /about.php
+Allow: /contact.php
+Allow: /events.php
+Allow: /news.php
+Allow: /admission.php
+Allow: /staff.php
+
+# Allow CSS and JS files
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block sensitive files
+Disallow: *.php$
+Disallow: /constant.php
+Disallow: /connection.php
+Disallow: /.htaccess
+Disallow: /.ftpquota
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /

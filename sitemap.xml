@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://anc.lk/</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://anc.lk/images/anclogo.png</image:loc>
+            <image:title>Ananda National College Logo</image:title>
+            <image:caption>Official logo of Ananda National College</image:caption>
+        </image:image>
+    </url>
+    
+    <!-- About Page -->
+    <url>
+        <loc>https://anc.lk/about.php</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://anc.lk/contact.php</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Events Page -->
+    <url>
+        <loc>https://anc.lk/events.php</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- News Page -->
+    <url>
+        <loc>https://anc.lk/news.php</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Admission Page -->
+    <url>
+        <loc>https://anc.lk/admission.php</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Staff Page -->
+    <url>
+        <loc>https://anc.lk/staff.php</loc>
+        <lastmod><?php echo date('Y-m-d'); ?></lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Dynamic Event Pages -->
+    <?php
+    $events = Database::search("SELECT event_id, topic, date FROM events ORDER BY date DESC LIMIT 50");
+    while ($event = $events->fetch_assoc()) {
+        echo '<url>';
+        echo '<loc>https://anc.lk/single-event.php?id=' . $event['event_id'] . '</loc>';
+        echo '<lastmod>' . date('Y-m-d', strtotime($event['date'])) . '</lastmod>';
+        echo '<changefreq>monthly</changefreq>';
+        echo '<priority>0.6</priority>';
+        echo '</url>';
+    }
+    ?>
+    
+    <!-- Dynamic News Pages -->
+    <?php
+    $news = Database::search("SELECT news_id, title, publish_date FROM news ORDER BY publish_date DESC LIMIT 50");
+    while ($article = $news->fetch_assoc()) {
+        echo '<url>';
+        echo '<loc>https://anc.lk/single-news.php?id=' . $article['news_id'] . '</loc>';
+        echo '<lastmod>' . date('Y-m-d', strtotime($article['publish_date'])) . '</lastmod>';
+        echo '<changefreq>monthly</changefreq>';
+        echo '<priority>0.5</priority>';
+        echo '</url>';
+    }
+    ?>
+    
+</urlset>
