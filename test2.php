@@ -1,0 +1,16 @@
+https://i.ibb.co/8xZ8B7F/anc.png
+https://i.ibb.co/McKPCc6/anclogo.png
+https://i.ibb.co/B3RKpcR/banner2.jpg
+https://i.ibb.co/xqn9gSF/game.png
+https://i.ibb.co/NTgD5mt/my1.jpg
+https://i.ibb.co/72ksDQZ/my2.jpg
+https://i.ibb.co/j5hwLc8/my3.jpg
+https://i.ibb.co/dm7yRxn/my4.jpg
+https://i.ibb.co/jHBXc3W/new.jpg
+https://i.ibb.co/drcRDw5/R-1.jpg
+https://i.ibb.co/qMTJPXc/R.jpg
+https://i.ibb.co/6HyLYjy/search-icon.png
+https://i.ibb.co/vdXdNH9/sport.jpg
+https://i.ibb.co/X73F6Jr/top-arrow.png
+https://i.ibb.co/y51QCzt/top-arrow1.png
+https://i.ibb.co/59XMBhs/top-arrow2.png

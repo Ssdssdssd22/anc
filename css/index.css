@@ -1,0 +1,279 @@
+/* Example for smaller screens (typically mobile) */
+@media (max-width: 767px) {
+  /* Adjust font sizes */
+  h1 {
+    font-size: 2.5em; /* Smaller heading font size */
+  }
+  p {
+    font-size: 1em; /* Smaller paragraph font size */
+  }
+
+  /* Make carousel indicators more visible */
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+  /* Adjust padding and margins for better spacing */
+  .padding_dd {
+    padding: 15px;
+  }
+
+  /* Stack columns in the slider section */
+  .slider_section .row > div {
+    width: 100%; /* Make columns take full width */
+    margin-bottom: 20px; /* Add spacing between stacked columns */
+  }
+  .slider_section .col-xl-5,
+  .slider_section .col-lg-5,
+  .slider_section .col-md-5,
+  .slider_section .col-sm-12,
+  .slider_section .col-xl-7,
+  .slider_section .col-lg-7,
+  .slider_section .col-md-7,
+  .slider_section .col-sm-12 {
+    width: 100%; /* Ensure they take full width on mobile */
+  }
+  .slider_section .images_box figure img {
+    width: 100%; /* Make images responsive within their container */
+    height: auto;
+  }
+  .slider_section .text-bg {
+    text-align: center; /* Center text on mobile */
+  }
+
+  /* Adjust the 'important facts' section layout */
+  .important_bg .row {
+    flex-direction: column; /* Stack the fact boxes */
+    align-items: center; /* Center the items */
+  }
+  .important_bg .col {
+    width: 80%; /* Adjust width of fact boxes on mobile */
+    margin-bottom: 20px;
+  }
+
+  /* Mobile-specific fixes for statistics and carousel */
+  .important_bg .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .important_bg .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .important_box {
+    margin: 0 auto;
+    max-width: 250px;
+  }
+  
+  /* Fix for carousel section */
+  .carousel-caption .row {
+    flex-direction: column;
+  }
+  
+  .carousel-caption .col-sm-12 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .carousel .text-bg {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel .images_box {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .carousel .images_box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  /* Adjust the 'Courses' section layout */
+  .Courses .row {
+    flex-direction: column; /* Stack the columns */
+  }
+  .Courses .col-xl-6,
+  .Courses .col-lg-6,
+  .Courses .col-md-6,
+  .Courses .col-sm-12 {
+    width: 100%;
+    padding-left: 15px !important; /* Adjust padding */
+    padding-right: 15px !important;
+  }
+  .Courses .box_bg_img .row {
+    flex-direction: column; /* Stack inner boxes */
+  }
+  .Courses .box_bg_img .col-xl-6,
+  .Courses .box_bg_img .col-lg-6,
+  .Courses .box_bg_img .col-md-6,
+  .Courses .box_bg_img .col-sm-12 {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .Courses .border_right {
+    border-right: none; /* Remove right border on mobile */
+    padding-top: 20px;
+  }
+
+  /* Adjust the 'learn' section image */
+  .learn .learn_box figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the 'make' section layout */
+  .make .row {
+    flex-direction: column; /* Stack columns */
+    align-items: center; /* Center content */
+  }
+  .make .col-xl-5,
+  .make .col-lg-5,
+  .make .col-md-5,
+  .make .col-sm-12 {
+    width: 90%; /* Adjust width */
+    margin-bottom: 20px;
+    text-align: center; /* Center text */
+  }
+  .make .offset-lg-2 {
+    margin-left: 0; /* Remove offset */
+  }
+  .make .make_img {
+    width: 80%; /* Adjust image width */
+    margin: 0 auto; /* Center image */
+  }
+  .make .follow-us {
+    justify-content: center; /* Center social icons */
+  }
+  .make .follow-us li {
+    margin: 0 10px;
+  }
+
+  /* Adjust the 'contact' section layout */
+  .contact .row {
+    flex-direction: column; /* Stack columns */
+  }
+  .contact .col-xl-6,
+  .contact .col-lg-6,
+  .contact .col-md-6,
+  .contact .col-sm-12 {
+    width: 100%;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .contact iframe {
+    height: 300px; /* Adjust map height */
+  }
+  .contact .contact_bg {
+    padding: 20px;
+  }
+
+  /* Facebook video container mobile optimization */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25% !important; /* 16:9 aspect ratio */
+    height: 0 !important;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    border: none;
+  }
+  
+  /* Ensure parent containers don't restrict video size */
+  .about-box {
+    padding: 10px !important;
+    height: auto !important;
+    width: 100%;
+  }
+}
+
+/* Example for medium screens (typically tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* You can add specific styling for tablets here if needed */
+  h1 {
+    font-size: 3em;
+  }
+  /* Example: Adjust column widths for a slightly different layout */
+  .slider_section .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+.gallery-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.gallery-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.gallery-track:hover {
+  animation-play-state: paused;
+}
+
+.gallery-item {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  min-width: 250px;
+}
+
+/* Create the infinite loop effect by cloning content via CSS */
+.gallery-track::before,
+.gallery-track::after {
+  content: "";
+  height: 100%;
+  width: calc(100% / 2);
+  position: absolute;
+}
+
+.gallery-track::before {
+  left: -50%;
+}
+
+.gallery-track::after {
+  right: -50%;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Move exactly half the width */
+}
+
+/* Carousel title control to prevent layout shifts */
+.carousel .text-bg h1 {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-height: 2.5em;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.carousel .text-bg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
